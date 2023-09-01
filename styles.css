@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  text-align: center;
+  color: #fff;
+  background-color: yellow;
+  padding: 1rem;
+}
+section {
+  background-color: rgb(83, 126, 126);
+  width: 450px;
+  min-width: 260px;
+  border-radius: 5px;
+}
+h3 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+.container {
+  margin: 1rem auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+input[type="number"] {
+  width: 40px;
+  background-color: rgb(93, 126, 126);
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: right;
+  border: none;
+  font-family: monospace;
+}
+input[type="number"]:focus {
+  outline: none;
+}
+
+select {
+  padding: 0.6rem;
+}
+select:focus {
+  border: none;
+}
+#changeRate {
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+#result {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-right: 1rem;
+}

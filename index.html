@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Currency converter</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="./script.js" type="module" defer></script>
+</head>
+
+<body>
+  <section>
+    <h3>Currency Converter</h3>
+    <div class="container">
+      <select name="firstCurrency" id="firstCurrency">
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="EUR" selected>EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+        <option value="JPY">JPY</option>
+        <option value="USD">USD</option>
+      </select>
+      <label for="firstCurrency"></label>
+      <label for="firstCurrencyAmount"></label>
+      <input type="number" name="firstCurrencyAmount" id="firstCurrencyAmount" value="1">
+    </div>
+    <div class="container">
+      <select name="secondCurrency" id="secondCurrency">
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP" selected>GBP</option>
+        <option value="INR">INR</option>
+        <option value="JPY">JPY</option>
+        <option value="USD">USD</option>
+      </select>
+      <label for="secondCurrency"></label>
+      <p id='result'>1</p>
+    </div>
+    <p id="changeRate">1 <span id="firstCurrencyNameDisplay"></span> = <span id="exchangeRate"></span> <span
+        id="secondCurrencyNameDisplay"></span></p>
+
+  </section>
+</body>
+
+</html>
